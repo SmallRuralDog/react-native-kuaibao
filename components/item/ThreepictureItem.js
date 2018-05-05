@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { View, Image, Text, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Image, Text, ScrollView, StyleSheet, TouchableOpacity,TouchableHighlight  } from 'react-native';
 import {Ionicons} from '@expo/vector-icons'
 import { pxToDp } from '../../lib';
 import { Layout } from '../../constants';
@@ -13,7 +13,8 @@ export default class ThreepictureItem extends PureComponent {
     }
 
     render() {
-        return (<TouchableOpacity
+        return (<TouchableHighlight
+            underlayColor={"#dcdcdc"}
             style={{ backgroundColor: "#ffffff" }}
             onPress={() => {
 
@@ -39,7 +40,7 @@ export default class ThreepictureItem extends PureComponent {
                     </TouchableOpacity>
                 </View>
             </View>
-        </TouchableOpacity>)
+        </TouchableHighlight>)
     }
 
 }
