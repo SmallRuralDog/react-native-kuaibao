@@ -1,9 +1,10 @@
 import React, { PureComponent } from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet, PixelRatio } from 'react-native';
 import { Ionicons, Feather } from '@expo/vector-icons';
 import ScrollableTabView, { ScrollableTabBar, DefaultTabBar } from "react-native-scrollable-tab-view"
 import { pxToDp } from '../lib'
 import HomeList from '../components/HomeList';
+
 const logoH = 80;
 export default class HomeScene extends PureComponent {
     static navigationOptions = ({ navigation }) => {
@@ -56,7 +57,7 @@ export default class HomeScene extends PureComponent {
                         paddingLeft: 10,
                         paddingRight: 10,
                     }}
-                    style={{ height: pxToDp(95),borderWidth:0,borderColor:"#f7f7f7" }}
+                    style={{ height: pxToDp(95), borderWidth: 1 / PixelRatio.get(), borderColor: "#f0f0f0" }}
                 />}
                 tabBarBackgroundColor='#fff'
                 tabBarActiveTextColor='#ea2d2b'
@@ -95,7 +96,7 @@ const styles = StyleSheet.create({
     },
     tabBarUnderline: {
         height: 2.5,
-        borderRadius:5,
+        borderRadius: 5,
         backgroundColor: "#ea2d2b"
     },
     tabBarTextStyle: {
