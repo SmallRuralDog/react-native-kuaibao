@@ -25,14 +25,14 @@ export default class ThreepictureItem extends PureComponent {
                 <Text numberOfLines={3} style={{ fontSize: 16.5, lineHeight: 24, color: "#3b3b3b" }}>{item.title}</Text>
                 <View style={{ flex: 1, marginTop: 10, flexDirection: 'row', justifyContent: 'space-between' }}>
                     <Image style={styles.image} resizeMode={'cover'}
-                        source={{ url: item.image_list[0].url }} />
+                        source={{ url: item.thumbnails[0].url }} />
                     <Image style={styles.image} resizeMode={'cover'}
-                        source={{ url: item.image_list[1].url }} />
+                        source={{ url: item.thumbnails[1].url }} />
                     <Image style={styles.image} resizeMode={'cover'}
-                        source={{ url: item.image_list[2].url }} />
+                        source={{ url: item.thumbnails[2].url }} />
                 </View>
                 <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginTop: 10 }}>
-                    <View><Text style={{ fontSize: 11, color: "#a1a0a1" }}>{item.source}</Text></View>
+                    <View><Text style={{ fontSize: 11, color: "#a1a0a1" }}>{item.source_name}</Text></View>
                     <TouchableOpacity
                         style={{ height: 13, width: 18, borderRadius: 5, backgroundColor: '#f9f9f9', alignItems: 'center', justifyContent: 'center' }}
                         onPress={() => { }}

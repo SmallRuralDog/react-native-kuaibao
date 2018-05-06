@@ -26,7 +26,7 @@ export default class extends Component {
                             justifyContent: 'space-between',
                             marginTop: 5
                         }}>
-                            <View><Text style={{fontSize: 11, color: "#a1a0a1"}}>{item.source}</Text></View>
+                            <View><Text style={{fontSize: 11, color: "#a1a0a1"}}>{item.source_name}</Text></View>
                             <TouchableOpacity
                                 style={{
                                     height: 13,
@@ -44,7 +44,7 @@ export default class extends Component {
                         </View>
                     </View>
                     <Image style={styles.image} resizeMode={'cover'}
-                           source={{url: item.image_url}}/>
+                           source={{url: item.thumbnails[0].url}}/>
                 </View>
             </TouchableHighlight>
         );

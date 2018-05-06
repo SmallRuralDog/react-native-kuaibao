@@ -1,21 +1,21 @@
-import React, { PureComponent } from 'react';
-import { View, Text, Image, StyleSheet, PixelRatio } from 'react-native';
-import { Ionicons, Feather } from '@expo/vector-icons';
-import ScrollableTabView, { ScrollableTabBar, DefaultTabBar } from "react-native-scrollable-tab-view"
-import { pxToDp } from '../lib'
+import React, {PureComponent} from 'react';
+import {View, Text, Image, StyleSheet, PixelRatio} from 'react-native';
+import {Ionicons, Feather} from '@expo/vector-icons';
+import ScrollableTabView, {ScrollableTabBar, DefaultTabBar} from "react-native-scrollable-tab-view"
+import {pxToDp} from '../lib'
 import HomeList from '../components/HomeList';
 
 const logoH = 80;
 export default class HomeScene extends PureComponent {
-    static navigationOptions = ({ navigation }) => {
-        const { params } = navigation.state;
+    static navigationOptions = ({navigation}) => {
+        const {params} = navigation.state;
         return {
             headerTitle: () => (
                 <View style={styles.header_title_view}>
                     <Image
                         source={require('../assets/images/logo.png')}
                         style={styles.logo}
-                        resizeMode='center' />
+                        resizeMode='center'/>
                     <View style={styles.search_view}>
                         <Feather
                             style={{
@@ -24,7 +24,7 @@ export default class HomeScene extends PureComponent {
                             }}
                             name="search"
                             size={16}
-                            color="#c0c4ca" />
+                            color="#c0c4ca"/>
                         <Text
                             style={{
                                 fontSize: 12,
@@ -44,7 +44,17 @@ export default class HomeScene extends PureComponent {
     constructor(props) {
         super(props);
         this.state = {
-            label: ['推荐', '新品', '居家', '餐厨/家居', '配件', '服装', '电器', '洗护', '杂货', '饮食', '婴童', '志趣'],
+            labels: [
+                {key: '100', label: '推荐'},
+                {key: '51830095', label: '热点'},
+                {key: '1192652582', label: '社会'},
+                {key: '179223212', label: '娱乐'},
+                {key: '26325229', label: '财经'},
+                {key: '923258246', label: '体育'},
+                {key: '1105405272', label: '军事'},
+                {key: '1525483516', label: '科技'},
+                {key: '472933935', label: '健康'},
+            ],
         }
     }
 
@@ -57,7 +67,7 @@ export default class HomeScene extends PureComponent {
                         paddingLeft: 10,
                         paddingRight: 10,
                     }}
-                    style={{ height: pxToDp(95), borderWidth: 1 / PixelRatio.get(), borderColor: "#f0f0f0" }}
+                    style={{height: pxToDp(95), borderWidth: 1 / PixelRatio.get(), borderColor: "#f0f0f0"}}
                 />}
                 tabBarBackgroundColor='#fff'
                 tabBarActiveTextColor='#ea2d2b'
@@ -65,8 +75,8 @@ export default class HomeScene extends PureComponent {
                 tabBarUnderlineStyle={styles.tabBarUnderline}
                 tabBarTextStyle={styles.tabBarTextStyle}
             >
-                {this.state.label.map((item, index) => {
-                    return (<HomeList tabLabel={item} key={index} />)
+                {this.state.labels.map((item, index) => {
+                    return (<HomeList tabLabel={item.label} data={item} key={index}/>)
                 })}
 
             </ScrollableTabView>

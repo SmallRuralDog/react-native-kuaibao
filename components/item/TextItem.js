@@ -23,11 +23,13 @@ export default class TextItem extends PureComponent {
                 <Text style={{fontSize: 16.5, lineHeight: 24, color: "#3b3b3b"}}>{item.title}</Text>
                 <View style={styles.info_view}>
                     <View style={styles.flex_view}>
-                        <View style={[styles.flex_view, {marginRight: 5}]}>
-                            <MaterialIcons name={'whatshot'} size={13} color={"#f24a3d"}/>
-                            <Text style={[styles.info_text, {color: "#f24a3d"}]}>置顶</Text>
-                        </View>
-                        <Text style={styles.info_text}>{item.source}</Text>
+                        {1 === 2 ?
+                            <View style={[styles.flex_view, {marginRight: 5}]}>
+                                <MaterialIcons name={'whatshot'} size={13} color={"#f24a3d"}/>
+                                <Text style={[styles.info_text, {color: "#f24a3d"}]}>置顶</Text>
+                            </View> : ''
+                        }
+                        <Text style={styles.info_text}>{item.source_name}</Text>
                     </View>
                     <TouchableOpacity
                         style={styles.del_btn}

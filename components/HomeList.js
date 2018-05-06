@@ -12,33 +12,37 @@ export default class HomeList extends PureComponent {
     constructor(props) {
         super(props);
         this.state = {
-            max_behot_time: 0
+            recoid: ''
         }
     }
 
     onFetch = (page = 1, startFetch, abortFetch) => {
-        let timestamp = new Date().getTime();
-        let max_behot_time = '';
-        if (page > 1) {
-            max_behot_time = '&max_behot_time=' + max_behot_time
-        }
-        http.get('https://m.toutiao.com/list/?tag=news_society&ac=api&count=200&format=json_raw&as=' + Math.random().toString(36).substr(2) + '&cp=' + Math.random().toString(36).substr(2), {}).then(res => {
+
+
+        http.get('https://zzd.sm.cn/iflow/api/v1/channel/'+this.props.data.key+'?count=20&method=new&recoid='+this.state.recoid, {}).then(res => {
             let listArr = [];
-            console.log(res.data);
-            res.data.map(item => {
-                listArr.push(item)
+            res.data.items.map(item => {
+                let article = res.data.articles[item.id];
+                listArr.push(article)
             });
-            startFetch(listArr, res.return_count)
+
+            let last_recoid = res.data.articles[res.data.items[res.data.items.length - 1].id].last_recoid;
+
+            this.setState({
+                recoid: last_recoid
+            });
+
+            startFetch(listArr, res.data.items.length)
         }).catch(err => {
             abortFetch()
         })
     };
 
     renderItem = (item, index, separator) => {
-        if (item.image_list.length === 3) {
+        if (item.thumbnails.length >= 3) {
             return (<ThreepictureItem item={item}/>);
         }
-        else if (item.image_url) {
+        else if (item.thumbnails.length > 0) {
             return (<OnePictureItem item={item}/>);
         } else {
             return (<TextItem item={item}/>);
@@ -65,7 +69,7 @@ export default class HomeList extends PureComponent {
             }}
             ref={ref => this.listView = ref}
             onFetch={this.onFetch}
-            keyExtractor={(item, index) => index.toString()}
+            keyExtractor={(item, index) => item.id + index.toString()}
             refreshableMode={Platform.OS == "ios" ? "basic" : "basic"} // basic or advanced
             item={this.renderItem}
             arrowImageStyle={{width: 20, height: 20, resizeMode: 'contain'}}
