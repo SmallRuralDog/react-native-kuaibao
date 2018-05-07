@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import {View, Image, Text, StyleSheet, TouchableOpacity, TouchableHighlight} from 'react-native';
+import {View, Image as RnImage, Text, StyleSheet, TouchableOpacity, TouchableHighlight} from 'react-native';
 import {Ionicons} from '@expo/vector-icons'
-import {pxToDp} from '../../lib';
+import {Image} from "react-native-expo-image-cache";
 import {Layout} from '../../constants';
 
 export default class extends Component {
@@ -9,6 +9,7 @@ export default class extends Component {
 
     render() {
         const {item} = this.props;
+        const preview = { uri: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAABXCAQAAACjUt0DAAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAAAEgAAABIAEbJaz4AAAAJdnBBZwAAABIAAABXAK421QoAAAFiSURBVEjH1ZbbtoMgDERnKP//yaYPVSAhF077dHQtamU7k0RKAxwcPCF4ItF+tWMNsVZS91uJhNlRX7FGPMgizOrEObJSiZUUAnRkR6q0qnErm7Lhc9UDBaXUt0kN0FOaOo4SQ5BRCahOA3HT5KwTE50GZhV37VazJKYljjE2SE+sPsittC1XW/FmgNVsZJcvuhvrAbLqffNadPXLYgaLzs8wWSo6rk9FYdeBUW/x1DRswfS6ysuNlcDZ7ssTSCpIfDsZn/J8b+Omh8pjR/X8DkuWndwnINpOlukFbtvzVslAEmF+TCMaCC4fkr8oKUgVzmQ4IBojHfqFqwd28O0S6AXA7ib2P+HOTlzLcXZ3+tFz6yRObiOmGY+3k6ev5XN97Uq7FoCXkl5HTrT6tQiw2u1aY/TrZF551jyMFPZiOqW1O5zXiJx1PV/2Tw52tD8ddYc/9Zlq7qhBrlrtuhX/98cbycGBFpNaiv0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTQtMDItMjdUMTc6NDQ6NDErMDg6MDDFbrv7AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE0LTAyLTI3VDE3OjQ0OjQxKzA4OjAwtDMDRwAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAASUVORK5CYII=" };
         return (
             <TouchableHighlight
                 underlayColor={"#f3f3f3"}
@@ -44,7 +45,8 @@ export default class extends Component {
                         </View>
                     </View>
                     <Image style={styles.image} resizeMode={'cover'}
-                           source={{url: item.thumbnails[0].url}}/>
+                           uri={item.thumbnails[0].url} preview={preview}
+                           />
                 </View>
             </TouchableHighlight>
         );

@@ -5,10 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/HomeList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomeList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/item/OnePictureITem.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/item/OnePictureITem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/item/TextItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/item/TextItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/item/ThreepictureItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/item/ThreepictureItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/http.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/http.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scene/HomeScene.js" beforeDir="false" afterPath="$PROJECT_DIR$/scene/HomeScene.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,14 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HomeScene.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HomeScene.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scene/HomeScene.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
+            <state relative-caret-position="17">
               <caret line="55" column="45" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -37,8 +33,8 @@
       <file leaf-file-name="HomeList.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/HomeList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="21" column="78" selection-start-line="21" selection-start-column="78" selection-end-line="21" selection-end-column="78" />
+            <state relative-caret-position="267">
+              <caret line="72" column="59" selection-start-line="72" selection-start-column="59" selection-end-line="72" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -61,13 +57,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThreepictureItem.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ThreepictureItem.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/components/item/ThreepictureItem.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="34" column="92" selection-start-line="34" selection-start-column="92" selection-end-line="34" selection-end-column="92" />
+            <state relative-caret-position="272">
+              <caret line="16" column="858" selection-start-line="16" selection-start-column="858" selection-end-line="16" selection-end-column="858" />
               <folding>
-                <element signature="e#0#45#0" expanded="true" />
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="339">
+              <caret line="62" column="19" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,7 +84,7 @@
       <file leaf-file-name="TextItem.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/item/TextItem.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="391">
               <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
@@ -88,8 +96,11 @@
       <file leaf-file-name="OnePictureITem.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/item/OnePictureITem.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="28" column="98" selection-start-line="28" selection-start-column="98" selection-end-line="28" selection-end-column="98" />
+            <state relative-caret-position="172">
+              <caret line="11" column="858" selection-start-line="11" selection-start-column="858" selection-end-line="11" selection-end-column="858" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -120,11 +131,11 @@
         <option value="$PROJECT_DIR$/components/listview/ultimateListView.js" />
         <option value="$PROJECT_DIR$/app.json" />
         <option value="$PROJECT_DIR$/lib/http.js" />
-        <option value="$PROJECT_DIR$/components/item/OnePictureITem.js" />
-        <option value="$PROJECT_DIR$/components/item/ThreepictureItem.js" />
-        <option value="$PROJECT_DIR$/components/HomeList.js" />
         <option value="$PROJECT_DIR$/components/item/TextItem.js" />
         <option value="$PROJECT_DIR$/scene/HomeScene.js" />
+        <option value="$PROJECT_DIR$/components/HomeList.js" />
+        <option value="$PROJECT_DIR$/components/item/OnePictureITem.js" />
+        <option value="$PROJECT_DIR$/components/item/ThreepictureItem.js" />
       </list>
     </option>
   </component>
@@ -148,8 +159,8 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="169" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="58" />
     <option name="y" value="23" />
     <option name="width" value="1862" />
     <option name="height" value="1057" />
@@ -248,7 +259,8 @@
       <workItem from="1525510575788" duration="4956000" />
       <workItem from="1525515639126" duration="2403000" />
       <workItem from="1525527320753" duration="9103000" />
-      <workItem from="1525580453682" duration="2074000" />
+      <workItem from="1525580453682" duration="2099000" />
+      <workItem from="1525698848032" duration="1350000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1525515120196</created>
@@ -264,33 +276,40 @@
       <option name="project" value="LOCAL" />
       <updated>1525539479770</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="123">
+      <created>1525597581224</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1525597581224</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18536000" />
+    <option name="totallyTimeSpent" value="19911000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="59" y="23" width="1862" height="1057" extended-state="6" />
+    <frame x="58" y="23" width="1862" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973147" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2525801" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.19633226" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.19583334" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,11 +325,66 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/scene/HomeScene.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="45" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/HomeList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="78" selection-start-line="21" selection-start-column="78" selection-end-line="21" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/http.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/listview/ultimateListView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7446">
+          <caret line="438" column="18" selection-start-line="438" selection-start-column="18" selection-end-line="438" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/item/ThreepictureItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="92" selection-start-line="34" selection-start-column="92" selection-end-line="34" selection-end-column="92" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/item/TextItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/item/OnePictureITem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="28" column="98" selection-start-line="28" selection-start-column="98" selection-end-line="28" selection-end-column="98" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scene/HomeScene.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="53" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -340,7 +414,7 @@
         <state relative-caret-position="510">
           <caret line="34" column="87" selection-start-line="34" selection-start-column="87" selection-end-line="34" selection-end-column="87" />
           <folding>
-            <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -390,15 +464,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/constants/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/item/ThreepictureItem.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="34" column="37" lean-forward="true" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
           <folding>
-            <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -448,19 +519,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/constants/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="84" column="29" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/listview/refreshableScrollView.android.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -471,21 +529,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/components/listview/refreshableScrollView.ios.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -510,26 +559,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/item/OnePictureITem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="28" column="98" selection-start-line="28" selection-start-column="98" selection-end-line="28" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/item/ThreepictureItem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="34" column="92" selection-start-line="34" selection-start-column="92" selection-end-line="34" selection-end-column="92" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/item/TextItem.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="391">
           <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
@@ -537,19 +569,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/HomeList.js">
+    <entry file="file://$PROJECT_DIR$/scene/HomeScene.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="21" column="78" selection-start-line="21" selection-start-column="78" selection-end-line="21" selection-end-column="78" />
+        <state relative-caret-position="17">
+          <caret line="55" column="45" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scene/HomeScene.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/HomeList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="55" column="45" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
+        <state relative-caret-position="267">
+          <caret line="72" column="59" selection-start-line="72" selection-start-column="59" selection-end-line="72" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/item/OnePictureITem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="11" column="858" selection-start-line="11" selection-start-column="858" selection-end-line="11" selection-end-column="858" />
           <folding>
-            <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="62" column="19" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/item/ThreepictureItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="858" selection-start-line="16" selection-start-column="858" selection-end-line="16" selection-end-column="858" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>

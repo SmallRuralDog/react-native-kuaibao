@@ -70,7 +70,7 @@ export default class HomeList extends PureComponent {
             ref={ref => this.listView = ref}
             onFetch={this.onFetch}
             keyExtractor={(item, index) => item.id + index.toString()}
-            refreshableMode={Platform.OS == "ios" ? "basic" : "basic"} // basic or advanced
+            refreshableMode={Platform.OS === "ios" ? "basic" : "basic"} // basic or advanced
             item={this.renderItem}
             arrowImageStyle={{width: 20, height: 20, resizeMode: 'contain'}}
             dateStyle={{color: 'lightgray'}}
