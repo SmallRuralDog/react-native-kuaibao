@@ -26,11 +26,11 @@ export default class ThreepictureItem extends PureComponent {
                 <Text numberOfLines={3} style={{fontSize: 16.5, lineHeight: 24, color: "#3b3b3b"}}>{item.title}</Text>
                 <View style={{flex: 1, marginTop: 10, flexDirection: 'row', justifyContent: 'space-between'}}>
                     <Image style={styles.image} resizeMode={'cover'}
-                           uri={item.thumbnails[0].url} preview={preview}/>
+                           uri={item.thumbnails[0].url}  defaultSource={preview}/>
                     <Image style={styles.image} resizeMode={'cover'}
-                           uri={item.thumbnails[1].url} preview={preview}/>
+                           uri={item.thumbnails[1].url}  defaultSource={preview}/>
                     <Image style={styles.image} resizeMode={'cover'}
-                           uri={item.thumbnails[2].url} preview={preview}/>
+                           uri={item.thumbnails[2].url}  defaultSource={preview}/>
                 </View>
                 <View style={{
                     flexDirection: 'row',

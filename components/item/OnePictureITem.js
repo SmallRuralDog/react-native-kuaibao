@@ -45,7 +45,7 @@ export default class extends Component {
                         </View>
                     </View>
                     <Image style={styles.image} resizeMode={'cover'}
-                           uri={item.thumbnails[0].url} preview={preview}
+                           uri={item.thumbnails[0].url}  defaultSource={preview}
                            />
                 </View>
             </TouchableHighlight>
