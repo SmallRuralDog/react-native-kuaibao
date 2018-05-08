@@ -76,7 +76,7 @@ export default class HomeScene extends PureComponent {
                 tabBarTextStyle={styles.tabBarTextStyle}
             >
                 {this.state.labels.map((item, index) => {
-                    return (<HomeList tabLabel={item.label} data={item} key={index}/>)
+                    return (<HomeList navigation={this.props.navigation} tabLabel={item.label} data={item} key={index}/>)
                 })}
 
             </ScrollableTabView>

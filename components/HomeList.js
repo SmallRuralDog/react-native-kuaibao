@@ -40,7 +40,7 @@ export default class HomeList extends PureComponent {
 
     renderItem = (item, index, separator) => {
         if (item.thumbnails.length >= 3) {
-            return (<ThreepictureItem item={item}/>);
+            return (<ThreepictureItem navigation={this.props.navigation} item={item}/>);
         }
         else if (item.thumbnails.length > 0) {
             return (<OnePictureItem item={item}/>);
@@ -50,6 +50,7 @@ export default class HomeList extends PureComponent {
 
 
     };
+
 
     renderSeparatorView = () => {
         return (<View style={{height: Layout.onePx, backgroundColor: "#ffffff"}}>
